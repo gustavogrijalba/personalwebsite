@@ -1,0 +1,32 @@
+.Navbar {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background-color: black;
+  padding: 10px;
+}
+
+.Navbar p {
+  font-family: "Love Letter", cursive;
+  color: white;
+  padding: 10px;
+  margin: 10px;
+  font-weight: 500;
+  text-decoration: none;
+  font-size: 20px;
+}
+
+.navbar-link {
+  text-decoration: none;
+}
+
+.messi {
+  width: 75px;
+  height: 75px;
+}
+
+.navbar-image {
+  margin-right: 50%;
+}

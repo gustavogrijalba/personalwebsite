@@ -1,95 +1,93 @@
-
 .landing {
-    background-image: url("https://media.tenor.com/VYUs0iVjqUAAAAAC/digital-life-lain.gif");
-    background-repeat: repeat-x;
-    background-size: cover; 
-    font-family: "Love Letter";
-    height: 100vh; 
-    width: 100vw;
-  }
+  background-repeat: repeat-x;
+  background-size: cover;
+  font-family: "Love Letter";
+  height: 100vh;
+  width: 100vw;
+}
 
 .glitch {
-    font-size: 50px;
-    color: white;
-    top: 50%;
-    left: 50%; 
-    transform: translate(-50%, -50%);
-    font-weight: 700;
-    font-family: 'Love Letter';
-    background-color: transparent;
-    border: none;
-    text-transform: uppercase;
-    position: fixed;
-  
-    text-shadow: 0.05em 0 0 rgba(118, 26, 159, 0.75), /* Purple color */
-              -0.025em -0.05em 0 rgba(255, 255, 255, 0.75), /* White color */
-              0.025em 0.05em 0 rgba(38, 38, 38, 0.75); /* Dark gray color */
-  
-    animation: glitch 500ms infinite;
+  font-size: 50px;
+  color: white;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-weight: 700;
+  font-family: "Love Letter";
+  background-color: transparent;
+  border: none;
+  text-transform: uppercase;
+  position: fixed;
+
+  text-shadow: 0.05em 0 0 rgba(118, 26, 159, 0.75),
+    /* Purple color */ -0.025em -0.05em 0 rgba(255, 255, 255, 0.75),
+    /* White color */ 0.025em 0.05em 0 rgba(38, 38, 38, 0.75); /* Dark gray color */
+
+  animation: glitch 500ms infinite;
+}
+
+.glitch span {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.glitch span:first-child {
+  animation: glitch 650ms infinite;
+  clip-path: polygon(0 0, 100% 0, 100% 45%, 0 45%);
+  transform: translate(-0.025em, -0.0125em);
+  /* color: green; */
+  opacity: 0.8;
+}
+
+.glitch span:last-child {
+  animation: glitch 375ms infinite;
+  clip-path: polygon(0 80%, 100% 20%, 100% 100%, 0 100%);
+  transform: translate(0.0125em, 0.025em);
+  /* color: red; */
+  opacity: 0.8;
+}
+
+/* https://web.dev/prefers-reduced-motion/#(bonus)-forcing-reduced-motion-on-all-websites */
+
+@keyframes glitch {
+  0% {
+    text-shadow: 0.05em 0 0 rgba(158, 141, 123, 0.75),
+      -0.05em -0.025em 0 rgba(128, 128, 128, 0.75),
+      -0.025em 0.05em 0 rgba(100, 100, 100, 0.75);
   }
-  
-  .glitch span {
-    position: absolute;
-    top: 0;
-    left: 0;
+  14% {
+    text-shadow: 0.05em 0 0 rgba(158, 141, 123, 0.75),
+      -0.05em -0.025em 0 rgba(128, 128, 128, 0.75),
+      -0.025em 0.05em 0 rgba(100, 100, 100, 0.75);
   }
-  
-  .glitch span:first-child {
-    animation: glitch 650ms infinite;
-    clip-path: polygon(0 0, 100% 0, 100% 45%, 0 45%);
-    transform: translate(-0.025em, -0.0125em);
-    /* color: green; */
-    opacity: 0.8;
+  15% {
+    text-shadow: -0.05em -0.025em 0 rgba(158, 141, 123, 0.75),
+      0.025em 0.025em 0 rgba(128, 128, 128, 0.75),
+      -0.05em -0.05em 0 rgba(100, 100, 100, 0.75);
   }
-  
-  .glitch span:last-child {
-    animation: glitch 375ms infinite;
-    clip-path: polygon(0 80%, 100% 20%, 100% 100%, 0 100%);
-    transform: translate(0.0125em, 0.025em);
-    /* color: red; */
-    opacity: 0.8;
+  49% {
+    text-shadow: -0.05em -0.025em 0 rgba(158, 141, 123, 0.75),
+      0.025em 0.025em 0 rgba(128, 128, 128, 0.75),
+      -0.05em -0.05em 0 rgba(100, 100, 100, 0.75);
   }
-  
-  /* https://web.dev/prefers-reduced-motion/#(bonus)-forcing-reduced-motion-on-all-websites */
-  
-  @keyframes glitch {
-    0% {
-      text-shadow: 0.05em 0 0 rgba(0, 119, 204, 0.75),
-        -0.05em -0.025em 0 rgba(170, 170, 170, 0.75), 
-        -0.025em 0.05em 0 rgba(0, 204, 119, 0.75); 
-    }
-    14% {
-      text-shadow: 0.05em 0 0 rgba(0, 119, 204, 0.75),
-        -0.05em -0.025em 0 rgba(170, 170, 170, 0.75),
-        -0.025em 0.05em 0 rgba(0, 204, 119, 0.75);
-    }
-    15% {
-      text-shadow: -0.05em -0.025em 0 rgba(0, 119, 204, 0.75),
-        0.025em 0.025em 0 rgba(170, 170, 170, 0.75),
-        -0.05em -0.05em 0 rgba(0, 204, 119, 0.75);
-    }
-    49% {
-      text-shadow: -0.05em -0.025em 0 rgba(0, 119, 204, 0.75),
-        0.025em 0.025em 0 rgba(170, 170, 170, 0.75),
-        -0.05em -0.05em 0 rgba(0, 204, 119, 0.75);
-    }
-    50% {
-      text-shadow: 0.025em 0.05em 0 rgba(0, 119, 204, 0.75),
-        0.05em 0 0 rgba(170, 170, 170, 0.75),
-        0 -0.05em 0 rgba(0, 204, 119, 0.75);
-    }
-    99% {
-      text-shadow: 0.025em 0.05em 0 rgba(0, 119, 204, 0.75),
-        0.05em 0 0 rgba(170, 170, 170, 0.75),
-        0 -0.05em 0 rgba(0, 204, 119, 0.75);
-    }
-    100% {
-      text-shadow: -0.025em 0 0 rgba(0, 119, 204, 0.75),
-        -0.025em -0.025em 0 rgba(170, 170, 170, 0.75),
-        -0.025em -0.05em 0 rgba(0, 204, 119, 0.75);
-    }
+  50% {
+    text-shadow: 0.025em 0.05em 0 rgba(158, 141, 123, 0.75),
+      0.05em 0 0 rgba(128, 128, 128, 0.75),
+      0 -0.05em 0 rgba(100, 100, 100, 0.75);
   }
-  
-  .glitch:hover {
-    cursor: pointer;
+  99% {
+    text-shadow: 0.025em 0.05em 0 rgba(158, 141, 123, 0.75),
+      0.05em 0 0 rgba(128, 128, 128, 0.75),
+      0 -0.05em 0 rgba(100, 100, 100, 0.75);
   }
+  100% {
+    text-shadow: -0.025em 0 0 rgba(158, 141, 123, 0.75),
+      -0.025em -0.025em 0 rgba(128, 128, 128, 0.75),
+      -0.025em -0.05em 0 rgba(100, 100, 100, 0.75);
+  }
+}
+
+.glitch:hover {
+  cursor: pointer;
+}
