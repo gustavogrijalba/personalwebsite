@@ -2,10 +2,9 @@
 .landing {
     background-image: url("https://media.tenor.com/VYUs0iVjqUAAAAAC/digital-life-lain.gif");
     background-repeat: repeat-x;
-    background-size: cover; /* This will keep the original aspect ratio and cover the full height */
-    background-position: 50% 70%;
+    background-size: cover; 
     font-family: "Love Letter";
-    height: 100vh; /* Set the height to cover the full viewport */
+    height: 100vh; 
     width: 100vw;
   }
 
@@ -55,9 +54,9 @@
   
   @keyframes glitch {
     0% {
-      text-shadow: 0.05em 0 0 rgba(0, 119, 204, 0.75), /* Computer screen blue */
-        -0.05em -0.025em 0 rgba(170, 170, 170, 0.75), /* Grey */
-        -0.025em 0.05em 0 rgba(0, 204, 119, 0.75); /* Computer screen green */
+      text-shadow: 0.05em 0 0 rgba(0, 119, 204, 0.75),
+        -0.05em -0.025em 0 rgba(170, 170, 170, 0.75), 
+        -0.025em 0.05em 0 rgba(0, 204, 119, 0.75); 
     }
     14% {
       text-shadow: 0.05em 0 0 rgba(0, 119, 204, 0.75),
