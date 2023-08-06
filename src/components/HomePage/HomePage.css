@@ -1,0 +1,13 @@
+.homepage {
+    background-image: url("https://media0.giphy.com/media/v1.Y2lkPTc5MGI3NjExYW93amUxMnZnNWx6bWpsOG42MmV0ODdwbG1uaXR6amV1YXY4YW92cyZlcD12MV9naWZzX3NlYXJjaCZjdD1n/OVlFjmEDhx9rG/giphy.gif");
+    background-size: cover;
+    background-position: 50% 75%;
+    color: white;
+    font-family: 'Love Letter';
+    height: 100vh;
+    margin: 0;
+}
+
+h1 {
+    margin: 0
+}
