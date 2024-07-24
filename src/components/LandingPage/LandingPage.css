@@ -91,3 +91,24 @@
 .glitch:hover {
   cursor: pointer;
 }
+
+.fullscreen-gifs {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.8);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+  overflow: hidden;
+}
+
+.transition-gif {
+  position: absolute;
+  width: 150px; /* Adjust the size as needed */
+  height: auto;
+  animation: fadeInOut 1.5s ease-in-out forwards;
+}
